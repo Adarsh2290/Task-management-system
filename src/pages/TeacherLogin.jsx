@@ -33,25 +33,23 @@ const TeacherLogin = () => {
           alignItems: 'center',
           background: 'rgba(234,239,239,0.97)',
           padding: 4,
-          borderRadius: 3,
-          boxShadow: 3,
+          borderRadius: 2,
+          boxShadow: 'none',
         }}
       >
         <Typography
           component="h1"
-          variant="h4"
+          variant="h5"
           sx={{
-            mb: 4,
+            mb: 3,
             color: 'var(--primary-dark)',
-            fontWeight: 'bold',
-            letterSpacing: 1,
+            fontWeight: 400,
+            letterSpacing: 0.5,
             textAlign: 'center',
-            borderBottom: '3px solid var(--accent-pink)',
-            pb: 1,
-            width: '100%',
-            background: 'linear-gradient(90deg, var(--accent-pink) 0%, var(--primary-light) 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
+            fontSize: '1.5rem',
+            background: 'none',
+            borderBottom: 'none',
+            pb: 0,
           }}
         >
           Teacher Login
@@ -107,16 +105,17 @@ const TeacherLogin = () => {
             sx={{
               mt: 3,
               mb: 2,
-              background: 'linear-gradient(90deg, var(--primary-light) 60%, var(--accent-pink) 100%)',
+              background: 'var(--primary-light)',
               color: 'var(--primary-dark)',
-              fontWeight: 'bold',
-              fontSize: '1.1rem',
+              fontWeight: 400,
+              fontSize: '1rem',
               borderRadius: 2,
+              boxShadow: 'none',
               transition: 'transform 0.2s',
               '&:hover': {
-                background: 'linear-gradient(90deg, var(--primary-medium) 60%, var(--accent-pink) 100%)',
+                background: 'var(--primary-medium)',
                 color: '#fff',
-                transform: 'scale(1.05)',
+                transform: 'scale(1.03)',
               },
             }}
           >

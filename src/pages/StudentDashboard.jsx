@@ -29,24 +29,22 @@ const StudentDashboard = () => {
           alignItems: 'center',
           background: 'rgba(234,239,239,0.97)',
           padding: 4,
-          borderRadius: 3,
-          boxShadow: 3,
+          borderRadius: 2,
+          boxShadow: 'none',
         }}
       >
         <Typography
-          variant="h4"
+          variant="h5"
           component="h1"
           sx={{
             color: 'var(--primary-dark)',
-            fontWeight: 'bold',
+            fontWeight: 400,
             mb: 3,
             textAlign: 'center',
-            borderBottom: '3px solid var(--accent-green)',
-            pb: 1,
-            width: '100%',
-            background: 'linear-gradient(90deg, var(--accent-green) 0%, var(--primary-medium) 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
+            fontSize: '1.5rem',
+            background: 'none',
+            borderBottom: 'none',
+            pb: 0,
           }}
         >
           My Tasks
@@ -57,10 +55,10 @@ const StudentDashboard = () => {
               key={task.id}
               sx={{
                 mb: 2,
-                background: 'linear-gradient(90deg, var(--background) 60%, var(--primary-light) 100%)',
+                background: 'var(--background)',
                 borderRadius: 1,
                 '&:hover': {
-                  background: 'linear-gradient(90deg, var(--primary-light) 60%, var(--accent-green) 100%)',
+                  background: 'var(--primary-light)',
                 },
               }}
             >
@@ -70,7 +68,7 @@ const StudentDashboard = () => {
                 sx={{
                   '& .MuiListItemText-primary': {
                     color: 'var(--primary-dark)',
-                    fontWeight: 'bold',
+                    fontWeight: 400,
                   },
                   '& .MuiListItemText-secondary': {
                     color: 'var(--primary-medium)',
@@ -82,7 +80,7 @@ const StudentDashboard = () => {
                   variant="body2"
                   sx={{
                     color: task.completed ? 'var(--accent-green)' : 'var(--accent-pink)',
-                    fontWeight: 'bold',
+                    fontWeight: 400,
                   }}
                 >
                   {task.completed ? 'Completed' : 'Pending'}
